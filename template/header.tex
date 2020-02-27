@@ -1,0 +1,69 @@
+\documentclass[a4paper,10pt,parskip=half]{scrartcl}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} %-- pour utiliser des accents en français
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb,amsthm} 
+\usepackage[round]{natbib}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage[left=20mm,top=20mm]{geometry}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage{boxedminipage}
+\usepackage{fontawesome}
+\usepackage{lastpage}
+\usepackage{todonotes}
+\usepackage{listings}
+\usepackage{ccicons}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage[tikz]{mdframed}
+
+
+\usepackage[autooneside,headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead*{GEO1004.2020}
+% \ohead*{Lesson 01}
+% \setheadsepline{0.5pt}
+\KOMAoptions{footsepline=:.25\textwidth,clines}
+\cfoot{\pagemark\ of \pageref{LastPage}}
+
+
+\newcommand{\ie}{ie}
+\newcommand{\eg}{eg}
+\newcommand{\reffig}[1]{Figure~\ref{#1}}
+\newcommand{\refsec}[1]{Section~\ref{#1}}
+\newcommand{\refeq}[1]{Equation~\ref{#1}}
+
+\setcapindent{1em} %-- for captions of Figures
+
+
+\renewcommand{\refname}{References \& further reading}
+\renewcommand{\contentsname}{\vspace{-15mm}}
+
+\definecolor{light-gray}{gray}{0.97}
+\definecolor{myred}{RGB}{111,12,31}
+\definecolor{mygreen}{RGB}{35,138,35}
+
+\newfloat{myfloat}{thp}{lop}
+
+\newmdenv[%
+  outerlinewidth=1.5,%
+  roundcorner=5pt,%
+  linecolor=myred,%
+  backgroundcolor=light-gray,%
+  frametitle=\faExternalLink\ To read or watch,
+]{link-box}
+
+\newmdenv[%
+  outerlinewidth=1.5,%
+  roundcorner=5pt,%
+  linecolor=mygreen,%
+  backgroundcolor=light-gray,%
+  frametitle=\faCog\ How does it work in practice?,
+]{practice-box}
