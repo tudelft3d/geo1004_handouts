@@ -1,8 +1,12 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
+<<<<<<< HEAD
+%% Created for Ravi Peters at 2020-03-04 15:52:29 +0100 
+=======
 
-%% Created for Ken Arroyo Ohori at 2020-02-29 15:31:15 +0100 
+%% Created for Ken Arroyo Ohori at 2020-03-03 17:54:28 +0100 
+>>>>>>> 7b17ca518c6efdc43bb95fbe5a35d336b8104227
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -11,6 +15,130 @@
 @comment{jabref-meta: databaseType:bibtex;}
 
 
+
+<<<<<<< HEAD
+@article{Ma12,
+	Author = {Ma, Jaehwan and Bae, Sang Won and Choi, Sunghee},
+	Date-Added = {2020-03-04 15:51:31 +0100},
+	Date-Modified = {2020-03-04 15:51:31 +0100},
+	Journal = {The Visual Computer},
+	Number = {1},
+	Pages = {7--19},
+	Publisher = {Springer},
+	Title = {3{D} medial axis point approximation using nearest neighbors and the normal field},
+	Volume = {28},
+	Year = {2012},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAscGFwZXJzL2FydCUzQTEwLjEwMDclMkZzMDAzNzEtMDExLTA1OTQtNy5wZGZPEQHuAAAAAAHuAAIAAAVtYWNPUwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fYXJ0JTNBMTAuMTAwNyUyRnMwI0ZGRkZGRkZGLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAABnBhcGVycwACAGsvOlVzZXJzOnJhdmk6TGlicmFyeTpDbG91ZFN0b3JhZ2U6aUNsb3VkIERyaXZlOlRVOkJpYmxpb2dyYXBoeTpwYXBlcnM6YXJ0JTNBMTAuMTAwNyUyRnMwMDM3MS0wMTEtMDU5NC03LnBkZgAADgBMACUAYQByAHQAJQAzAEEAMQAwAC4AMQAwADAANwAlADIARgBzADAAMAAzADcAMQAtADAAMQAxAC0AMAA1ADkANAAtADcALgBwAGQAZgAPAAwABQBtAGEAYwBPAFMAEgBpVXNlcnMvcmF2aS9MaWJyYXJ5L0Nsb3VkU3RvcmFnZS9pQ2xvdWQgRHJpdmUvVFUvQmlibGlvZ3JhcGh5L3BhcGVycy9hcnQlM0ExMC4xMDA3JTJGczAwMzcxLTAxMS0wNTk0LTcucGRmAAATAAEvAAAVAAIAC///AAAACAANABoAJABTAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAkU=}}
+
+@article{Blum67,
+	Annote = {Blum takes a new approach to shape. It is problematic to capture shape in a usefull mathematical way, certainly when you try to describe it by analyzing the boundary of the shape itself. On the other hand he notes that people are able to easily recognize and distinguish known shapes, even when strongly distorted in e.g. a cartoon (sometimes even used to enhance recognition).
+He then goes on and defines the properties of
+"
+1) excitation - each point can have a value of either 0 or 1
+2) propagation - each excited point excites and adjacent point with a delay prportional to the distance
+3) refraction - once fired, an excited point is not affected by a second firing for some aribitrary interval of time
+"
+these are defined on each point of the continious isotrpoic plane, on which the contour (boundary) of a shape is impinged, exicting the plane at those point. The spreading of the excitation is now key to the definition of the Medial Axis Function (MAF), which is defined at those points where the wave fronts of excited points meet (a corner). Also included in the MAF are the times at which the corners appear. Visualize as a grass fire.
+
+Then Blum gives two alternative definitions , most natably: "the MA is the locus of points equidistant from the pattern and in this sense represents a line of symmetry of the pattern". Some properties of the MAF:
+Non-convex shapes will have parts of the MAF outside the shape itself.
+The MAF represents exactly the same information as the contour/shape itself.
+The connectedness of the MAF is to some degree stable for deformation in the input contour.
+
+He then goes in describing some limitations and more properties/applications.
+
+Part of the paper is not so easy to read due to the use words and terms that I'm unfamiliar with.},
+	Author = {Blum, Harry},
+	Date-Added = {2020-03-04 15:51:27 +0100},
+	Date-Modified = {2020-03-04 15:51:27 +0100},
+	Journal = {Models for the perception of speech and visual form},
+	Number = {5},
+	Pages = {362--380},
+	Read = {1},
+	Title = {A transformation for extracting new descriptors of shape},
+	Volume = {19},
+	Year = {1967},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAUcGFwZXJzLzE5NjctYmx1bS5wZGZPEQGOAAAAAAGOAAIAAAVtYWNPUwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8NMTk2Ny1ibHVtLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAogY3UAAAAAAAAAAAAAAAAABnBhcGVycwACAFMvOlVzZXJzOnJhdmk6TGlicmFyeTpDbG91ZFN0b3JhZ2U6aUNsb3VkIERyaXZlOlRVOkJpYmxpb2dyYXBoeTpwYXBlcnM6MTk2Ny1ibHVtLnBkZgAADgAcAA0AMQA5ADYANwAtAGIAbAB1AG0ALgBwAGQAZgAPAAwABQBtAGEAYwBPAFMAEgBRVXNlcnMvcmF2aS9MaWJyYXJ5L0Nsb3VkU3RvcmFnZS9pQ2xvdWQgRHJpdmUvVFUvQmlibGlvZ3JhcGh5L3BhcGVycy8xOTY3LWJsdW0ucGRmAAATAAEvAAAVAAIAC///AAAACAANABoAJAA7AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAc0=}}
+
+@phdthesis{Peters18,
+	Author = {Ravi Peters},
+	Date-Added = {2020-03-04 15:51:00 +0100},
+	Date-Modified = {2020-03-04 15:52:28 +0100},
+	Month = March,
+	Note = {ISBN: 978-94-6186-899-2},
+	Pdf = {https://3d.bk.tudelft.nl/rypeters/pdfs/thesis_web.pdf},
+	Propositions = {https://3d.bk.tudelft.nl/rypeters/pdfs/thesis_propositions.pdf},
+	School = {Delft University of Technology},
+	Title = {Geographical point cloud modelling with the {3D} medial axis transform},
+	Year = {2018},
+	Bdsk-Url-1 = {http://dx.doi.org/10.4233/uuid:39c5b176-398b-4a6f-8578-1dc46e9f37ed}}
+=======
+@book{Damiand14,
+	Author = {Guillaume Damiand and Pascal Lienhardt},
+	Date-Added = {2020-03-03 17:54:26 +0100},
+	Date-Modified = {2020-03-03 17:54:26 +0100},
+	Publisher = {CRC Press},
+	Title = {Combinatorial Maps: Efficient Data Structures for Computer Graphics and Image Processing},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAgLi4vLi4vLi4vLi4vUGFwZXJzL0RhbWlhbmQxNC5wZGZPEQEiAAAAAAEiAAIAAANTU0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8NRGFtaWFuZDE0LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAEAAIAAAogY3UAAAAAAAAAAAAAAAAABlBhcGVycwACACAvOlVzZXJzOmtlbjpQYXBlcnM6RGFtaWFuZDE0LnBkZgAOABwADQBEAGEAbQBpAGEAbgBkADEANAAuAHAAZABmAA8ACAADAFMAUwBEABIAHlVzZXJzL2tlbi9QYXBlcnMvRGFtaWFuZDE0LnBkZgATAAEvAAAVAAIACv//AAAACAANABoAJABHAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAW0=}}
+
+@inproceedings{Dobkin87,
+	Annote = {Describes the facet-edge data structure, a 3d version of the 2d quad-edge structure of Guibas and Stolfi. It is a special case of Brisson's n-D one.
+- Basic operations on facet-edges and on vertices
+- How to make more elaborate functions to create primitives based on the simple ones
+- An example of decomposing a polyhedron using the data structure, based on W{\"o}rdenweber and creating a Delaunay triangulation using the algorithm of Avis and Battacharya},
+	Author = {David P. Dobkin and Michael J. Laszlo},
+	Booktitle = {Proceedings of the 3rd Annual Symposium on Computational Geometry},
+	Date-Added = {2020-03-03 12:26:43 +0100},
+	Date-Modified = {2020-03-03 12:26:43 +0100},
+	Keywords = {facet-edge data structure, splice, meld},
+	Pages = {86--99},
+	Publisher = {ACM},
+	Read = {1},
+	Title = {Primitives for the Manipulation of Three-Dimensional Subdivisions},
+	Year = {1987},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAfLi4vLi4vLi4vLi4vUGFwZXJzL0RvYmtpbjg3LnBkZk8RASAAAAAAASAAAgAAA1NTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////wxEb2JraW44Ny5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAQAAgAACiBjdQAAAAAAAAAAAAAAAAAGUGFwZXJzAAIAHy86VXNlcnM6a2VuOlBhcGVyczpEb2JraW44Ny5wZGYAAA4AGgAMAEQAbwBiAGsAaQBuADgANwAuAHAAZABmAA8ACAADAFMAUwBEABIAHVVzZXJzL2tlbi9QYXBlcnMvRG9ia2luODcucGRmAAATAAEvAAAVAAIACv//AAAACAANABoAJABGAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAWo=}}
+
+@inproceedings{Brisson89,
+	Abstract = {We develop a representation for the topological structure of subdivided manifolds (with and without boundary) of dimension d ≥ 1 which allows straightforward access of the available order information. It is shown that there exists a large amount of ordering information in subdivided manifolds: given a (k-2)-cell in the boundary of a (k+1)-cell, 1≤ k ≤ d, all of the k- and (k-1)-cells `between them' can be ordered `around' the (k-2)-cell. This includes the usual orderings in 2- and 3-dimensional objects. We introduce the `cell-tuple structure', a simple, uniform representation of the incidence and ordering information in a subdivided manifold. It includes the quad-edge data structure of Guibas and Stolfi [GS 85] and the facet-edge data structure of Dobkin and Laszlo [DL 87] as special cases in dimensions 2 and 3, respectively.},
+	Address = {New York, NY, USA},
+	Annote = {- Definition of (subdivided) d-manifolds
+- The cell-tuple structure
+- In the switch operator, any n-dimensional cell can be obtained by 3 incident cells of n-1, n and n+1 dimensions (lemma 1)
+- Switch_k applies switch as switch(k-1, k, k+1)
+- The cell-tuple is conformed of: (1) a cell description based on the 3 incidencies, and (2), a tuple made of switch_k  for 0 <= k <= d
+- The cell-tuple structure is then the set of all the cell-tuples
+- Given a k-2-cell and a k+1-cell, k-1-cells and k-cells between them can be ordered around the k-2-cell, alternating between k-1-cells and k-cells
+- To account for manifolds with boundary},
+	Author = {Brisson, Erik},
+	Booktitle = {Proceedings of the 5th annual symposium on Computational geometry},
+	Date-Added = {2020-03-03 12:26:35 +0100},
+	Date-Modified = {2020-03-03 12:26:35 +0100},
+	Keywords = {cell-tuple, cell-tuple structure, d-manifolds, subdivided d-manifolds, switch},
+	Pages = {218--227},
+	Publisher = {ACM},
+	Read = {1},
+	Title = {Representing geometric structures in $d$ dimensions: topology and order},
+	Year = {1989},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAgLi4vLi4vLi4vLi4vUGFwZXJzL0JyaXNzb244OS5wZGZPEQEiAAAAAAEiAAIAAANTU0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8NQnJpc3Nvbjg5LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAEAAIAAAogY3UAAAAAAAAAAAAAAAAABlBhcGVycwACACAvOlVzZXJzOmtlbjpQYXBlcnM6QnJpc3Nvbjg5LnBkZgAOABwADQBCAHIAaQBzAHMAbwBuADgAOQAuAHAAZABmAA8ACAADAFMAUwBEABIAHlVzZXJzL2tlbi9QYXBlcnMvQnJpc3Nvbjg5LnBkZgATAAEvAAAVAAIACv//AAAACAANABoAJABHAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAW0=}}
+
+@article{Lienhardt94,
+	Annote = {A tough read, the "bible" of G-maps.
+
+- A nice reasoning behind the distinction between the combinatorial and embedding model: distinguishing between problems to be solved in geometric modelling and in computational geometry.
+},
+	Author = {Pascal Lienhardt},
+	Date-Added = {2020-03-03 12:26:20 +0100},
+	Date-Modified = {2020-03-03 12:26:20 +0100},
+	Journal = {International Journal of Computational Geometry and Applications},
+	Keywords = {G-Maps - generalised maps, geometric models, simplicial sets, simplicial complexes, maps},
+	Number = {3},
+	Pages = {275--324},
+	Read = {1},
+	Title = {$N$-dimensional Generalized Combinatorial Maps and Cellular Quasi-Manifolds},
+	Volume = {4},
+	Year = {1994},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAiLi4vLi4vLi4vLi4vUGFwZXJzL0xpZW5oYXJkdDk0LnBkZk8RASoAAAAAASoAAgAAA1NTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////w9MaWVuaGFyZHQ5NC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAQAAgAACiBjdQAAAAAAAAAAAAAAAAAGUGFwZXJzAAIAIi86VXNlcnM6a2VuOlBhcGVyczpMaWVuaGFyZHQ5NC5wZGYADgAgAA8ATABpAGUAbgBoAGEAcgBkAHQAOQA0AC4AcABkAGYADwAIAAMAUwBTAEQAEgAgVXNlcnMva2VuL1BhcGVycy9MaWVuaGFyZHQ5NC5wZGYAEwABLwAAFQACAAr//wAAAAgADQAaACQASQAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAF3}}
 
 @incollection{Farin04,
 	Author = {Gerald Farin},
@@ -31,6 +159,7 @@
 	Title = {Curves and Surfaces for Computer Graphics},
 	Year = {2006},
 	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAgLi4vLi4vLi4vLi4vUGFwZXJzL1NhbG9tb24wNi5wZGZPEQEiAAAAAAEiAAIAAANTU0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8NU2Fsb21vbjA2LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAEAAIAAAogY3UAAAAAAAAAAAAAAAAABlBhcGVycwACACAvOlVzZXJzOmtlbjpQYXBlcnM6U2Fsb21vbjA2LnBkZgAOABwADQBTAGEAbABvAG0AbwBuADAANgAuAHAAZABmAA8ACAADAFMAUwBEABIAHlVzZXJzL2tlbi9QYXBlcnMvU2Fsb21vbjA2LnBkZgATAAEvAAAVAAIACv//AAAACAANABoAJABHAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAW0=}}
+>>>>>>> 7b17ca518c6efdc43bb95fbe5a35d336b8104227
 
 @article{Lafarge10,
 	Author = {Lafarge, Florent and Descombes, Xavier and Zerubia, Josiane and Pierrot Deseilligny, Marc},
