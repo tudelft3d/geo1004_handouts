@@ -103,7 +103,7 @@ Both of these cases are problematic because the structures representing holes ca
 In other words, it might be impossible to navigate from the outer boundary of an object to its inner boundaries and vice versa.
 
 While holes can cause problems when modelling objects using boundary representation, these are relatively easy to solve.
-The three most common approaches are: (i) splitting volumes into multiple parts in a manner that the 2D or 3D holes lie between different objects (\reffig{subfig:hole-split}), then somehow semantically marking that the parts belong to the same object (\eg\ by using the same attribute id); (ii) storing a list of holes for each object as a sort of attribute, from which they can then be then accessed; and (iii) using one \emph{bridge edge} per hole, which are special edges that join each inner boundary to the outer boundary (\reffig{subfig:hole-bridge}).
+The three most common approaches are: (i) splitting volumes into multiple parts in a manner that the 2D or 3D holes lie between different objects (\reffig{subfig:hole-split}), then somehow semantically marking that the parts belong to the same object (\eg\ by using the same attribute id); (ii) storing a list of holes for each object as a sort of attribute, from which they can then be accessed; and (iii) using one \emph{bridge edge} per hole, which are special edges that join each inner boundary to the outer boundary (\reffig{subfig:hole-bridge}).
 The end result of the latter approach is that objects are only bounded by a single outer boundary, which wraps around the original outer boundary and all of the former inner boundaries.
 Bridge edges might also be marked semantically as such, although it is possible to tell that an edge is a bridge edge because it is surrounded on all sides by the same 2D/3D object.
 
@@ -171,16 +171,16 @@ Note that these are not equally desirable as (c) results in a disconnected struc
 \begin{figure}
 \centering
 \includegraphics[width=0.4\linewidth]{figs/non2manifold.jpg}
-\caption{The 2D surface around this volume is a non-2-manifold because it not homeomorphic to a plane.}%
+\caption{The 2D surface around this volume is a non-2-manifold because it is not homeomorphic to a plane.}%
 \label{fig:non2manifold}
 \end{figure}
 
 Based on these definitions, we can now better describe exactly what 3D objects can be stored using boundary representation without problems: those that are bounded by exactly one 2-manifold surface.
 The logic behind this is that 2D space is by definition a 2-manifold surface, which means that we are able to store objects that are bounded by a surface that is homeomorphic to it.
-A intuitive way to think about this is to consider a counterexample in terms of the Jordan curve theorem: if we draw a closed loop that crosses itself, which is clearly a non-manifold, we will end up with more than one interior part (or an ambiguous situation).
+An intuitive way to think about this is to consider a counterexample in terms of the Jordan curve theorem: if we draw a closed loop that crosses itself, which is clearly a non-manifold, we will end up with more than one interior part (or an ambiguous situation).
 This line of thought also gives us an alternative way to think of why objects with 3D holes are a problem, which is because they are bounded by more than one surface.
 
-While the obvious solution might be to disallow non-manifold objects, they are are common in practice however, and so we need to have methods to deal with them, even if these methods might introduce additional complexity to boundary representation.
+While the obvious solution might be to disallow non-manifold objects, they are common in practice however, and so we need to have methods to deal with them, even if these methods might introduce additional complexity to boundary representation.
 For this, there are two approaches that are typically used: (i) splitting non-manifold objects into multiple manifold parts, then marking the parts as belonging to the same object using semantics; and (ii) creating duplicate elements at the same location (\reffig{subfig:nonmanifold-1} and~\ref{subfig:nonmanifold-2}).
 In 2D this usually involves duplicate vertices, whereas in 3D this might involve duplicate edges as well.
 
@@ -231,7 +231,7 @@ However, real-world objects are always volumetric---no matter how thin they are-
 \section{Data structures for meshes}
 
 Moving back to the storage of 3D models using boundary representation, there are a large number of data structures that can be used for this purpose.
-However, they are three broad approaches: (i) data structures using triangles as base elements; (ii) data structures that use edges or half-edges as base elements; and (iii) data structures that have polygons, edges and vertices as base elements.
+However, there are three broad approaches: (i) data structures using triangles as base elements; (ii) data structures that use edges or half-edges as base elements; and (iii) data structures that have polygons, edges and vertices as base elements.
 We will show one or two characteristic examples for each approach, with the understanding that there are many possible variations of each of them.
 
 \subsection{Triangle-based structures}

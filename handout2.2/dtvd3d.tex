@@ -626,7 +626,7 @@ As shown in Figure~\ref{fig:plc},
   \caption{\textbf{Left:} a PLC representing a solid (with a genus of 1) and having one dangling left; notice also that one extra edge is on a polygon. \textbf{Right:} These two polygons do not form a valid PLC because their intersection is not formed of vertices and edges in the PLC.}
 \label{fig:plc}
 \end{figure}
-in practice this means that polygons cannot intersect other polygons (there needs to be a vertex and/or edges), but there are otherwise no restriction on the shapes that can represented.
+in practice this means that polygons cannot intersect other polygons (there needs to be a vertex and/or edges), but there are otherwise no restriction on the shapes that can be represented.
 Observe also that a PLC is flexible and allows unconnected (\ie\ `floating') vertices, edges, and faces (an edge can for instance be inside a polygon).
 Dangling edges, such as the one in Figure~\ref{fig:plc}, are also allowed.
 The domain represented by a PLC does not have to represent a volume, it can be simply a set of points and surfaces that act as constraints for the tetrahedralisation.
@@ -687,7 +687,7 @@ The empty circumsphere for a ConsDT is less strict: a tetrahedron is Delaunay if
 
 %
 
-Thus, the consDT ConsDT aims at keeping the Delaunay properties, but relaxes them to be able to respect the constraints (edges and polygons in the PLC).
+Thus, the ConsDT aims at keeping the Delaunay properties, but relaxes them to be able to respect the constraints (edges and polygons in the PLC).
 \begin{figure}
   \centering
   \includegraphics[width=0.95\linewidth]{figs/cdt_tudelft}

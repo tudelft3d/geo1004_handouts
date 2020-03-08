@@ -26,7 +26,7 @@
 
 Until this lesson, we have only discussed data models that represent 3D geometries very \emph{explicitly}.
 In other words, we have been specifying objects' shape through simple elements that have a direct geometric interpretation.
-For instance, a tetrahedron's shape can be known by looking only at the coordinates of its four vertices, and a polyhedron's shape by looking at the set of its bounding polygons (which have a shape is easily obtained from a list of vertices).
+For instance, a tetrahedron's shape can be known by looking only at the coordinates of its four vertices, and a polyhedron's shape by looking at the set of its bounding polygons (which have a shape that is easily obtained from a list of vertices).
 Even in a compact representation of a voxel, its geometry can be easily known based on a few simple parameters, such as: the absolute location and orientation of the voxel grid, the cell spacing along each axis, the order of the voxels in a linear encoding of the grid, and an index to identify the voxel on this encoding.
 
 % Pros and cons
@@ -177,7 +177,7 @@ However, several simple axis-aligned 3D solids also have easy point set definiti
 \item[balls] \ie\ the space inside a sphere, which can be defined as \( (x-c_x)^2 + (y-c_y)^2 + (z-c_z)^2 < r^2\), where \(r\) is the radius and \(c = (c_x, c_y, c_z)\) is the centre;
 % \item[ellipsoid interiors] defined as \( \frac{(x-c_x)^2}{a^2} + \frac{(y-c_y)^2}{b^2} + \frac{(z-c_z)^2}{c^2} < 1 \), where \(a\), \(b\) and \(c\) are half the lengths of each axis, and \(c = (c_x, c_y, c_z)\) is the centre; and
 \item[cuboid interiors] \ie\ box-shaped objects, which can be defined using intervals for the minimum and maximum values it has along each axis, \ie\ \( x_\mathrm{min} < x < x_\mathrm{max} \wedge y_\mathrm{min} < y < y_\mathrm{max} \wedge z_\mathrm{min} < z < z_\mathrm{max} \); and
-\item[cylinder interiors] by checking whether two a point lies within a radius for two axes, and within an interval for the third.
+\item[cylinder interiors] by checking whether a point lies within a radius for two axes, and within an interval for the third.
 \end{description}
 
 Other common objects are more general versions of these objects, such as ellipsoid interiors, parallelepipeds, cones, etc.
@@ -281,7 +281,7 @@ These can be computed by computing a plane passing through the polygon and inter
 \item[Selection] involves checking whether each face (in 2D) or volume (3D) should be part of the output or not, marking it as such in the relevant parts of the local pyramids.
 This is done by testing whether it is in the interior or exterior of the input Nef polygons/polyhedra.
 
-\item[Simplification] involves removing unnecessary structures in way that does not alter the point set that is represented, which is akin to the dissolving operations common in GIS\@.
+\item[Simplification] involves removing unnecessary structures in a way that does not alter the point set that is represented, which is akin to the dissolving operations common in GIS\@.
 This is done by deleting local pyramids when they do not actually represent a new vertex, or when are not subdivided.
 
 \end{description}
