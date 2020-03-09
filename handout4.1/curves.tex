@@ -200,7 +200,7 @@ Given a sequence of points, the B\'ezier curve starts from the first point and e
 This is known as a \emph{B\'ezier segment}.
 
 The tangent vector at the first point points to the second point, whereas the tangent vector at the last point points from the next-to-last point to it.
-Similar constructions can be made for the higher derivatives, with the \(n\)-th derivative being determined only by \(n_1\) points.
+Similar constructions can be made for the higher derivatives, with the \(n\)-th derivative being determined only by \(n+1\) points.
 
 If there are no intermediate points, the result is a linear B\'ezier curve, which is equivalent to a straight line between the two endpoints.
 The most common forms of B\'ezier curves are however quadratic B\'ezier curves (\reffig{fig:quadratic}), which have one intermediate point, \eg\ \(p_{\mathrm{quadratic}} = (p_0, p_1, p_2)\), and cubic B\'ezier curves (\reffig{fig:cubic}), which have two intermediate points, \eg\ \(p_{\mathrm{cubic}} = (p_0, p_1, p_2, p_3)\).
