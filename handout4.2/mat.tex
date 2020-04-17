@@ -171,7 +171,7 @@ Using the medial geometry we can describe a number of interesting properties of 
 \begin{enumerate}
 	\item Any atom $\mathbf{c}$ is always \emph{medial} to $\mathcal{B}$, \ie\ it is equidistant to the feature points of $\mathbf{c}$ (hence the name of the MAT).
 	\item The medial ball $B$ is always tangential to $\mathcal{B}$ at the feature points. 
-	\item The radius $r$ can be used to define the `thickness' of an object, since it measured the distance to the `middle' of the object where the MAT is located.
+	\item The radius $r$ can be used to define the `thickness' of an object, since it measures the distance to the `middle' of the object where the MAT is located.
 	% \item From the union of all interior medial balls of an object, its boundary can be reconstructed.
 	% \item The medial bisector $\vec{\mathbf{b}}$ always points in the direction of decreasing radius along a medial branch or sheet.
 	% \item The feature points of a medial atom at the tip of a medial branch indicate points of minimal of curvature on $\mathcal{B}$. Notice also that the radius of those atoms is inversely proportional to the curvature at its feature points.
@@ -186,7 +186,7 @@ An object can only have an exterior MAT if the shape of that object is non-conve
 % In case of a composition of multiple objects, the interaction between these object can also lead to an exterior MAT, even if all objects are convex.\todo{illustrate that}
 
 The separation between inside and outside is very clear and unambiguous for a an object with a closed boundary such as the gingerbread man of Figure~\ref{fig:gingerman} or for any perfectly manifold boundary.
-However, for objects that are not completely closed this separation is less clear, as there could be MAT sheets that connect the interior and exterior parts though holes in the boundary surface.
+However, for objects that are not completely closed this separation is less clear, as there could be MAT sheets that connect the interior and exterior parts through holes in the boundary surface.
 In some cases with an open boundary a reasonable distinction can still be made.
 For example for a DTM we can follow the convention that the `ground side` of the DTM is the interior, and the `sky side' is the exterior, as follows from Figure~\ref{fig:object_earth}.
 \begin{figure}
@@ -284,7 +284,7 @@ The MAT can be approximated in various ways, \eg~by using voxels and distance tr
 In this lesson, however, we will focus on the so-called shrinking-ball algorithm.
 
 \subsubsection{The shrinking-ball algorithm}
-The shrinking-ball algorithm works well for robustly approximating the MAT of 3D objects that are represented using boundary points, \ie point clouds.
+The shrinking-ball algorithm works well for robustly approximating the MAT of 3D objects that are represented using boundary points, \ie\ point clouds.
 It is a simple and fast algorithm that can be made robust to noise in the boundary points.
 %This means that pruning the MAT after approximation is not necessary with the shrinking-ball algorithm.
 The shrinking-ball algorithm takes an \emph{oriented point cloud} as input, \ie\ a point cloud that includes a normal vector for each point. 
@@ -426,7 +426,7 @@ Based on these properties, an importance measure for each medial atom is defined
 The resulting (pruned) MAT is usually a subset of the original MAT. 
 Some methods preserve topology, others do not or do so only up to a certain level. 
 The main challenge is often selecting the optimal threshold value---a compromise between removing noisy MAT parts and not removing fine detail, \ie\ often the endpoints of good MAT branches are also affected by pruning.
-Examples of importance measures for pruning are the separation angle $\theta$ (recall this is the angle between the spoke vectors) and the separation distance $\lambda$, \ie the distance between the two feature points of a medial atom. 
+Examples of importance measures for pruning are the separation angle $\theta$ (recall this is the angle between the spoke vectors) and the separation distance $\lambda$, \ie\ the distance between the two feature points of a medial atom. 
 These values are typically low for noisy parts of the MAT.
 Figure~\ref{fig:imaimp} gives an example of pruning with the separation distance.
 \begin{figure}
@@ -491,7 +491,7 @@ The Medial Axis Transform was originally introduced in 1967 by Harry Blum, a bio
 \begin{enumerate}
   \item Draw the medial axis of a 2D box. Then draw the medial bisectors. How could the medial bisector be used to distinguish between the different sheets?
   \item For what closed object the MAT is a single point?
-  \item Do think the MAT could help us to detect thick and thin parts of an object? If so, how?
+  \item Do you think the MAT could help us to detect thick and thin parts of an object? If so, how?
 \end{enumerate}
 
 
