@@ -273,7 +273,7 @@ Surfaces with holes are generally not a problem for triangle-based data structur
 When these are triangulated (using a constrained triangulation), holes become connected to the rest of the structure.
 If a hole of a surface contains a different surface, the triangles adjacent to it can simply link to the triangles representing it.
 If it does not, the triangles can have a special link or value corresponding to empty space (\eg\ null).
-The same applies for triangles on the edge of the surface
+The same applies for triangles on the edge of the surface.
 
 In addition to the basic approach, there are variations that use more compact representations of triangle-based structures, usually by joining multiple adjacent triangles that are arranged in a certain way.
 Examples of these are triangle strips (\reffig{fig:trianglestrip}) and triangle fans/stars (triangles that are all incident to a certain vertex).
